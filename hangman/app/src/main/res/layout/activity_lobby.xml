@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.game.hangman.activity.LobbyActivity"
+    android:background="@drawable/castle">
+
+    <GridView
+        android:id="@+id/letters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="7"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:src="@drawable/rope" />
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:src="@drawable/torso" />
+
+    <ImageView
+        android:id="@+id/armRight"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:rotation="-60"
+        android:src="@drawable/right_arm" />
+
+    <ImageView
+        android:id="@+id/armLeft"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:rotation="-30"
+        android:src="@drawable/left_arm" />
+
+    <ImageView
+        android:id="@+id/legRight"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="409dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:src="@drawable/right_leg" />
+
+    <ImageView
+        android:id="@+id/legLeft"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/word"
+        android:layout_alignEnd="@+id/word"
+        android:layout_alignRight="@+id/word"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:src="@drawable/left_leg" />
+
+    <LinearLayout
+        android:id="@+id/word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"></LinearLayout>
+
+
+</RelativeLayout>
+
+
